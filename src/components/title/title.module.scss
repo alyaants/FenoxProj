@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+.wrapTitle {
+  color: $black;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 100px auto 0;
+  text-align: center;
+
+  .title {
+    margin-bottom: 20px;
+  }
+  .link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: $red;
+    text-transform: none;
+    margin-bottom: 50px;
+  }
+}

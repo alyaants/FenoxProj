@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+.cardMainScreen {
+  width: 294.33px;
+  height: 203px;
+  background-color: $white;
+  opacity: 80%;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  text-transform: uppercase;
+  color: $red;
+  font-size: 22px;
+  font-weight: 700;
+}

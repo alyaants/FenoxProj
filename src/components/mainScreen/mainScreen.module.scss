@@ -1,0 +1,45 @@
+@import "../../styles/colors.scss";
+@import "../button/button.module.scss";
+
+.mainScreen {
+  background-image: url("../../styles/imgs/Rectangle\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  width: 710px;
+  .title {
+    font-size: 53px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    span{
+    letter-spacing: 2px;
+    }
+  }
+  p {
+    width: 460px;
+  }
+}
+
+.buttonsWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    margin-top: 33px;
+}
+
+.cardsWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 903px;
+}

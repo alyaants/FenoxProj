@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+
+.link {
+  margin: auto;
+  color: $red;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsPartnersWrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
