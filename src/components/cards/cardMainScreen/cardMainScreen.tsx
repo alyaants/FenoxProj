@@ -6,7 +6,7 @@ interface CardMainScreen {
   className?: string;
 }
 
-const CardMainScreen = (props: CardMainScreen) => {
+export const CardMainScreen = (props: CardMainScreen) => {
   return (
     <div className={styles.cardMainScreen}>
       <h3 className={styles.title}>{props.title}</h3>
@@ -15,4 +15,3 @@ const CardMainScreen = (props: CardMainScreen) => {
   );
 };
 
-export default CardMainScreen;

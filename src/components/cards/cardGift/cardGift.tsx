@@ -7,7 +7,7 @@ interface CardGiftProps {
   price: string;
 }
 
-const CardGift = (props: CardGiftProps) => {
+export const CardGift = (props: CardGiftProps) => {
   return (
     <div className={styles.cardWrap}>
       <div className={styles.image}>
@@ -25,4 +25,3 @@ const CardGift = (props: CardGiftProps) => {
     </div>
   );
 };
-export default CardGift;

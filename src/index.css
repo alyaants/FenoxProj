@@ -17,8 +17,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media screen and (max-width: 1200px) {
+  body{
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body{
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  body{
+    padding: 0 12px;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+

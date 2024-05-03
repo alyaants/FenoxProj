@@ -1,4 +1,26 @@
-export const MOCK_ARR = {
+interface Product {
+  name: string;
+  img: string;
+  firm: string;
+  price: string;
+  site: string;
+  id: string;
+}
+
+interface Partner {
+  name: string;
+  img: string;
+  firm: string;
+  site: string;
+  id: string;
+}
+
+interface MockData {
+  products: Product[];
+  partners: Partner[];
+}
+
+export const MOCK_ARR: MockData = {
   products: [
     {
       name: "Electronic Granite Keyboard",

@@ -8,6 +8,10 @@
   margin-bottom: 32px;
   margin-top: 50px;
   font-family: "Inter";
+  transition: transform 0.3s ease;
+  &:hover{
+    transform:scale(1.1);
+  }
   .partnerImg {
     width: 160px;
     height: 80px;

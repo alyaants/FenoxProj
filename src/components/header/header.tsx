@@ -24,7 +24,7 @@ const Header = () => {
   const onClickPartners = () => {
     navigate(RoutesList.Partners);
   };
-  
+
   return (
     <div className={styles.mainContainer}>
       <header className={styles.header}>
@@ -34,10 +34,11 @@ const Header = () => {
             <p onClick={onClickCatalog}>Каталог подарков</p>
             <p onClick={onClickPartners}>Партнёры</p>
           </nav>
-          <p onClick={onClickHome} className={styles.logo}>
+          <div onClick={onClickHome} className={styles.logo}>
             <img src={image} alt="#" />
-          </p>
+          </div>
         </div>
+
         <Button title={"Войти"} className={styles.logIn} />
       </header>
 

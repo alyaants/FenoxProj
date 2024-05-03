@@ -1,5 +1,5 @@
 import Button from "../button/button";
-import CardMainScreen from "../cards/cardMainScreen/cardMainScreen";
+import { CardMainScreen } from "../cards/cardMainScreen/cardMainScreen";
 import styles from "./mainScreen.module.scss";
 
 const MainScreen = () => {

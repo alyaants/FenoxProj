@@ -4,11 +4,10 @@ import styles from "./slider.module.scss";
 import Title from "../title/title";
 
 const Slider = () => {
-  const data = MOCK_ARR.products.slice(0, 10); // Ограничение до 15 карточек
+  const data = MOCK_ARR.products.slice(0, 10);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [startX, setStartX] = useState<number | null>(null);
   const [isDragging, setIsDragging] = useState<boolean>(false);
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const handleMouseDown = (event: MouseEvent<HTMLDivElement>) => {
     setIsDragging(true);
@@ -17,33 +16,14 @@ const Slider = () => {
 
   const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
     if (!isDragging || !sliderRef.current || startX === null) return;
-    const x = event.pageX - (sliderRef.current?.offsetLeft || 0);
-    const distance = x - startX;
-    if (distance > 50) {
-      nextSlide();
-      setIsDragging(false);
-    } else if (distance < -50) {
-      prevSlide();
-      setIsDragging(false);
-    }
   };
 
   const handleMouseUp = () => {
     setIsDragging(false);
   };
 
-  const nextSlide = () => {
-    const newIndex = (currentIndex + 1) % data.length;
-    setCurrentIndex(newIndex);
-  };
-
-  const prevSlide = () => {
-    const newIndex = (currentIndex - 1 + data.length) % data.length;
-    setCurrentIndex(newIndex);
-  };
-
   return (
-    <>
+    <div>
       <Title title={"Каталог подарков"} />
       <div
         className={styles.wrap}
@@ -52,13 +32,8 @@ const Slider = () => {
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
       >
-        {data.map((item, index) => (
-          <div
-            key={item.id}
-            className={`${styles.card} ${
-              index === currentIndex ? styles.active : ""
-            }`}
-          >
+        {data.map((item) => (
+          <div key={item.id} className={styles.card}>
             <div className={styles.imgWrap}>
               <img src={item.img} alt={item.name} className={styles.img} />
             </div>
@@ -66,7 +41,7 @@ const Slider = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

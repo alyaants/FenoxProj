@@ -9,7 +9,7 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  
+
   .image {
     width: 220px;
     height: 135px;
@@ -45,6 +45,10 @@
       right: 0;
       bottom: -2px;
       cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: rotate(270deg) scale(1.2);
+      }
     }
   }
 
@@ -53,5 +57,12 @@
   }
   &:nth-child(4) {
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 565px;
+    .rightWrap {
+      width: 301px;
+    }
   }
 }

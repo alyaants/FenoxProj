@@ -8,14 +8,16 @@ import { RoutesList } from "../../pages/router";
 const Partners = () => {
   const navigate = useNavigate();
   const onClick = () => {
-    navigate(RoutesList.Home);
+    navigate(RoutesList.Partners);
   };
   const data = MOCK_ARR.partners;
 
   return (
-    <>
+    <div>
       <Title title={"Партнеры программы"} />
-      <p className={styles.link}>{"Посмотреть все >"}</p>
+      <p className={styles.link} onClick={onClick}>
+        {"Посмотреть все >"}
+      </p>
       <div className={styles.cardsPartnersWrap}>
         {data.map((item) => (
           <CardPartners
@@ -26,7 +28,7 @@ const Partners = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 export default Partners;

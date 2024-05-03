@@ -13,10 +13,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+    padding: 30px;
+  }
 }
 
 .description {
-  width: 710px;
+  width: 60%;
   .title {
     font-size: 53px;
     font-weight: 700;
@@ -42,4 +45,8 @@
   display: flex;
   justify-content: space-between;
   width: 903px;
+  @media screen and (max-width: 1040px) {
+    width: 700px;
+  }
+
 }

@@ -16,6 +16,11 @@
   height: 30px;
   padding: 8px 16px;
   font-size: 16px;
+  transition: background-color 0.6s ease-in;
+  &:hover {
+    background-color: $white;
+    color: $red;
+  }
 }
 
 .signIn {
@@ -24,6 +29,10 @@
   height: 46px;
   padding: 16px 40px;
   font-size: 20px;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0 0 10px 0 $black;
+  }
 }
 
 .registration {
@@ -33,4 +42,23 @@
   height: 46px;
   padding: 16px 40px;
   font-size: 20px;
+  animation: colorChange 5s infinite;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0 0 10px 0 $red;
+  }
+  @keyframes colorChange {
+    0% {
+      background-color: $red;
+      color: $white;
+    }
+    65% {
+      background-color: $white;
+      color: $red;
+    }
+    100% {
+      background-color: $red;
+      color: $white;
+    }
+  }
 }

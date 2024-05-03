@@ -15,7 +15,7 @@ const CardPartners = (props: CardPartnersProps) => {
       </div>
       <p className={styles.name}>{props.name}</p>
       <p className={styles.firm}>{props.firm}</p>
-      <p className={styles.site}>{props.site}</p>
+      <a href={props.site} className={styles.site}>{props.site}</a>
     </div>
   );
 };
