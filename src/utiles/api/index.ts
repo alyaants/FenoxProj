@@ -56,7 +56,7 @@ export const MOCK_ARR: MockData = {
     },
     {
       name: "Small Bronze Computer",
-      img: "https://loremflickr.com/640/480/nature",
+      img: "https://loremflickr.com/640/471/nature",
       firm: "Frederick Bogisich",
       price: "202.00",
       site: "http://frightened-oats.info",

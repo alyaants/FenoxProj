@@ -1,14 +1,14 @@
 import Banner from "../../components/banner/banner";
+import CatalogComp from "../../components/cataloComp/catalogComp";
 import Gifts from "../../components/gifts/gifts";
 import MainScreen from "../../components/mainScreen/mainScreen";
 import Partners from "../../components/partners/partners";
-import Slider from "../../components/slider/slider";
 
 const Home = () => {
   return (
     <div>
       <MainScreen />
-      <Slider />
+      <CatalogComp />
       <Gifts />
       <Partners />
       <Banner />
