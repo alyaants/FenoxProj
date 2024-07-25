@@ -13,8 +13,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  margin-bottom: 358px;
   @media screen and (max-width: 1200px) {
     padding: 30px;
+  }
+  @media screen and (max-width: 360px) {
+    justify-content: end;
+    padding: 20px;
+    height: 65vh;
   }
 }
 
@@ -25,20 +32,34 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -2px;
-    span{
-    letter-spacing: 2px;
+    span {
+      letter-spacing: 2px;
     }
   }
   p {
     width: 460px;
   }
+
+  @media screen and (max-width: 360px) {
+    .title {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+      width: 296px;
+    }
+  }
 }
 
-.buttonsWrap{
-    display: flex;
-    justify-content: space-between;
-    width: 490px;
-    margin-top: 33px;
+.buttonsWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+  margin-top: 33px;
+  @media screen and (max-width: 360px) {
+    width: 296px;
+    flex-direction: column-reverse;
+  }
 }
 
 .cardsWrap {
@@ -48,5 +69,10 @@
   @media screen and (max-width: 1040px) {
     width: 700px;
   }
-
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    position: absolute;
+    bottom: -56%;
+    left: 0;
+  }
 }

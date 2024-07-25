@@ -37,9 +37,14 @@ const Header = () => {
           <div onClick={onClickHome} className={styles.logo}>
             <img src={image} alt="#" />
           </div>
+          <Button title={"Войти"} className={styles.logIn} />
         </div>
 
-        <Button title={"Войти"} className={styles.logIn} />
+        <div className={styles.mobileHeader}>
+          <Button title={"x"} />
+          <img src={image} alt="#" />
+          <Button title={"Войти"} className={styles.logIn} />
+        </div>
       </header>
 
       <div className={styles.container}>

@@ -16,7 +16,8 @@
     justify-content: space-between;
     height: 320px;
 
-    h2 {
+    .bannerText {
+      width: 750px;
       font-size: 62px;
       font-weight: 700;
       line-height: 100%;
@@ -27,6 +28,7 @@
     .buttonsWrap {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 490px;
     }
   }

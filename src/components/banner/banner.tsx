@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <div className={styles.bannerWrap}>
       <div className={styles.textWrap}>
-        <h2>
-          <span>Дарим бонус</span> за регистрацию: 100 баллов
+        <h2 className={styles.bannerText}>
+          Дарим бонус за регистрацию: 100 баллов
         </h2>
         <div className={styles.buttonsWrap}>
           <Button title={"Войти"} className={styles.signIn} />
